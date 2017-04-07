@@ -1,16 +1,13 @@
 import test from 'tape';
 import nameGenerator from '../src';
 
-const quoteString = a =>
-  typeof a === 'string' ? `'${a}'` : a;
-
 const testRunner = (t, characters) => {
   const generateName = nameGenerator(characters);
   return (number, expected) =>
     t.equal(
       generateName(number),
       expected,
-      `should turn ${quoteString(number)} into '${expected}'`
+      `should turn ${number} into '${expected}'`
     );
 }
 
