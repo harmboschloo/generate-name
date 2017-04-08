@@ -6,7 +6,7 @@ const nameGenerator = characters => {
   const generateName = (x, name) =>
     x < 0
       ? name
-      : generateName(x / n - 1, name + chars[Math.floor(x % n)]);
+      : generateName(x / n - 1, chars[Math.floor(x % n)] + name);
 
   return x => generateName(x, '');
 }
