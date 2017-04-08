@@ -1,16 +1,3 @@
-# hash-to-string
-
-Converts an unsigned number into a string given a set of characters.
-
-# install
-
-```
-npm install hash-to-string --save
-```
-
-# example
-
-```
 import createToString from 'hash-to-string';
 
 const toAbcString = createToString('abc');
@@ -76,8 +63,3 @@ toAString(4); // 'aaaaa'
 // negative number
 
 toAString(-1); // ''
-```
-
-# license
-
-MIT
