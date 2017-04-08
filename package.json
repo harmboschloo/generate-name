@@ -1,6 +1,6 @@
 {
   "name": "hash-to-string",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Converts an unsigned number into a string given a set of characters.",
   "files": [
     "lib"
@@ -31,10 +31,14 @@
   "homepage": "https://github.com/harmboschloo/hash-to-string",
   "keywords": [
     "number",
+    "hash",
     "string",
     "characters",
     "toString",
     "name",
+    "convert",
+    "converter",
+    "generate",
     "generator"
   ],
   "license": "MIT"
