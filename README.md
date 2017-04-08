@@ -2,13 +2,13 @@
 
 Converts an unsigned number into a string given a set of characters.
 
-# install
+## install
 
 ```
 npm install hash-to-string --save
 ```
 
-# example
+## example
 
 ```
 import createToString from 'hash-to-string';
@@ -78,6 +78,6 @@ toAString(4); // 'aaaaa'
 toAString(-1); // ''
 ```
 
-# license
+## license
 
 MIT
