@@ -1,7 +1,7 @@
 {
-  "name": "number-to-string",
+  "name": "hash-to-string",
   "version": "0.0.0",
-  "description": "Convert a number into a string given a set of characters.",
+  "description": "Converts an unsigned number into a string given a set of characters.",
   "files": [
     "lib"
   ],
@@ -26,9 +26,9 @@
   "author": "Harm Boschloo",
   "repository": {
     "type": "git",
-    "url": "git://github.com/harmboschloo/number-to-string.git"
+    "url": "git://github.com/harmboschloo/hash-to-string.git"
   },
-  "homepage": "https://github.com/harmboschloo/number-to-string",
+  "homepage": "https://github.com/harmboschloo/hash-to-string",
   "keywords": [
     "number",
     "string",

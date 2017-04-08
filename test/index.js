@@ -1,11 +1,11 @@
 import test from 'tape';
-import nameGenerator from '../src';
+import converter from '../src';
 
 const testRunner = (t, characters) => {
-  const generateName = nameGenerator(characters);
+  const convert = converter(characters);
   return (number, expected) =>
     t.equal(
-      generateName(number),
+      convert(number),
       expected,
       `should turn ${number} into '${expected}'`
     );
@@ -63,6 +63,36 @@ test('test floating numbers on 3 character set (abc)', t => {
   runTest(1.3, 'b');
   runTest(2.99999999999, 'c');
   runTest(3.00000000001, 'aa');
+  t.end();
+});
+
+test('test 10 character set of numbers (0123456789)', t => {
+  const runTest = testRunner(t, '0123456789');
+  runTest(0, '0');
+  runTest(1, '1');
+  runTest(2, '2');
+  runTest(3, '3');
+  runTest(4, '4');
+  runTest(5, '5');
+  runTest(6, '6');
+  runTest(7, '7');
+  runTest(8, '8');
+  runTest(9, '9');
+  runTest(10, '00');
+  runTest(11, '01');
+  runTest(12, '02');
+  runTest(13, '03');
+  runTest(14, '04');
+  runTest(15, '05');
+  runTest(16, '06');
+  runTest(17, '07');
+  runTest(18, '08');
+  runTest(19, '09');
+  runTest(20, '10');
+  runTest(21, '11');
+  runTest(22, '12');
+  runTest(99, '89');
+  runTest(100, '90');
   t.end();
 });
 

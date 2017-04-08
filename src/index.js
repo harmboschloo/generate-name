@@ -1,14 +1,14 @@
 
-const nameGenerator = characters => {
+const converter = characters => {
   const chars = characters.split('');
   const n = chars.length;
 
-  const generateName = (x, name) =>
+  const convert = (x, name) =>
     x < 0
       ? name
-      : generateName(x / n - 1, chars[Math.floor(x % n)] + name);
+      : convert(x / n - 1, chars[Math.floor(x % n)] + name);
 
-  return x => generateName(x, '');
+  return x => convert(x, '');
 }
 
-export default nameGenerator;
+export default converter;
