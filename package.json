@@ -1,7 +1,7 @@
 {
-  "name": "generate-name",
+  "name": "number-to-string",
   "version": "0.0.0",
-  "description": "Converts numbers to names given a set of characters.",
+  "description": "Convert a number into a string given a set of characters.",
   "files": [
     "lib"
   ],
@@ -26,12 +26,16 @@
   "author": "Harm Boschloo",
   "repository": {
     "type": "git",
-    "url": "git://github.com/harmboschloo/generate-name.git"
+    "url": "git://github.com/harmboschloo/number-to-string.git"
   },
-  "homepage": "https://github.com/harmboschloo/generate-name",
+  "homepage": "https://github.com/harmboschloo/number-to-string",
   "keywords": [
-    "name generator",
-    "generate name"
+    "number",
+    "string",
+    "characters",
+    "toString",
+    "name",
+    "generator"
   ],
   "license": "MIT"
 }
